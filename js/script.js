@@ -138,7 +138,7 @@ function initMap() {
         }]
     });
     var marker = new google.maps.Marker({
-        position: north60,
+        position: waterloo,
         map: map
     });
 }
