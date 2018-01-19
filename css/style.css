@@ -378,3 +378,7 @@ Image credits: unsplash.com
     display:block;
     text-align:center
 }
+
+ .conceptimg{
+    max-width: 100%;
+ }
