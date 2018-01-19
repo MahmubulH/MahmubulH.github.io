@@ -361,4 +361,5 @@ Image credits: unsplash.com
 
 .fade-carousel .slides > img {
     margin: auto;
+    height: 60vh;
 }
