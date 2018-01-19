@@ -1,211 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Virtual Fitting</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <link href="css/styles.css?v=1.6" rel="stylesheet">
-    <link href="css/queries.css?v=1.6" rel="stylesheet">
-    <link href="css/jquery.fancybox.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body> 
-      <section class="navigation">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-              <nav class="pull">
-                <ul class="top-nav">
-                  <li><a href="#aboutVirtualFitting">About Virtual Fitting<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li class="nav-last"><a href="#aboutTeam">About Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-<!--                   <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li class="nav-last"><a href="#design">Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li> -->
-                </ul>
-              </nav>
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <div id="navbar-example">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#welcome" class="searchterm">Home</a></li>
+                        <li><a href="#about" class="searchterm">About</a></li>
+                        <li><a href="#team" class="searchterm">Team</a></li>
+                        <li><a href="#contact" class="searchterm">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-          </div>
+        </nav>
+    </div>
+
+    <div id="welcome">
+        <div class="bgimg-1">
+            <img src="img/logo.png" alt="North60Logo" class="logo">
+            <div class="baseimg-1">
+            </div>
         </div>
-      </section>
-      <section class="hero" id="hero">
+    </div>
+
+    <div id="about" class="white-bg">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-right">
-              <a href="#"><i class="fa fa-navicon fa-2x nav_slide_button"></i></a>
+            <!-- Mihai -->
+            <!-- Heading Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">About</h2>
+                    <br>
+                    <p>Shopping online in the comfort of one’s home versus bustling shopping malls. The choice is obvious, but it’s not that simple. Meeting the rise of online shopping are issues that lean consumers away from it. One such issue is the lack of universal clothing metrics and variable body sizes, invalidating 100% fit guarantee. VR-Fitting has proposed an at-home solution that allows one to create a virtual model of themselves to try on clothes prior to purchase, encompassing motion, stretch, and style.
+                    </p>
+                </div>
+                <!-- /.col-md-4 -->
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <h1 class="animated bounceInDown">Virtual Fitting</h1>
-              <p class="animated fadeInUpDelay">Simple fitting for everyone.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 col-md-offset-5 text-center">
-              <a href="https://player.vimeo.com/video/87701971?title=0&amp;byline=0&amp;portrait=0&amp;color=1883ad&amp;autoplay=1" class="hero-play-btn various fancybox.iframe">Play Button</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <a href="#aboutVirtualFitting" class="get-started-btn">About the product</a>
-            </div>
-          </div>
+            <!-- /.row -->
         </div>
-      </section>
-      <section class="download-now" id="aboutVirtualFitting">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 wp1">
-              <h1>
-              Virtual Fitting
-              </h1>
-              <p>Clothes shopping has evolved with modern technology. What used to be outlet stores has now been replaced with virtual webstores. Online shopping is being introduced to the market and it is booming. A survey by UPS found that in 2015, 51% of shoppers made their purchases online and it’s only increasing in numbers.</p>
-              <p>Create a product that allows users to determine whether online clothes will fit their body.</p>
-              <a href="#" class="download-btn">View the team</a>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="baseimg-2">
+            <div class="foreground">
             </div>
-          </div>
         </div>
-      </section>
-      <section class="testimonials" id="aboutTeam">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div id="firstSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="avatar"><img src="img/av-doge.png" alt="Nhat le"></div>
-                    <h1>Nhat Le</h1>
-                    <h2>Lead software developer.</h2>
-                  </li>
-                  <li>
-                    <div class="avatar"><img src="img/av-doge.png" alt="Momo Hoque"></div>
-                    <h1>Momo Hoque</h1>
-                    <h2>Lead electrical.</h2>
-                  </li>
-                  <li>
-                    <div class="avatar"><img src="img/av-doge.png" alt="Mihai Listov"></div>
-                    <h1>Mihai Listov</h1>
-                    <h2>Lead mechanical.</h2>
-                  </li>
-                  <li>
-                    <div class="avatar"><img src="img/av-doge.png" alt="Rahul Sehgal"></div>
-                    <h1>Rahul Sehgal</h1>
-                    <h2>Everything.</h2>
-                  </li>
-                </ul>
-              </div>
+    </div>
+    <div id="team" class="white-bg">
+
+        <div class="row text-center">
+            <div class="col-md-3 members">
+                <img class="img-circle" src="/img/team/Momo.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="">Mahmubal Hoque</h2>
+                <h4 class="">Project Manager, Electrical Engineer</h4>
+                <hr />
+                <p class="text-left">
+                    Steve is a growth oriented, energetic entrepreneur specializing in transformational growth strategies for mid-sized companies. He has sector experience in both publicly traded and privately held companies across multiple industries including Contract
+                    Manufacturing, Consumer Packaged Goods, Sporting Goods, Marketing Services, and Technology. Steve is known as a professional and driven leader with the ability to balance visionary and strategic thinking skills with execution that
+                    delivers results.
+                </p>
+                <div id="steve" class="collapse">
+                    <p class=" text-left">
+                        Committed to excellence, Steve is team player with strong communication skills, a deep understanding of entrepreneurial pace, and a demonstrated ability to develop and implement business process improvements. Steve holds an Honours Business Administration
+                        (HBA) from the Ivey School of Business at Western University, is a graduate of the Quantum Shift entrepreneurs program, the YPO Executive Education program at Harvard Business School and is a member of the Young Presidents Organization
+                        (YPO).
+                    </p>
+                    <br>
+                </div>
             </div>
-          </div>
+
+            <div class="col-md-3 members">
+                <img class="img-circle" src="/img/team/Nhat.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="">Nhat Le</h2>
+                <h4 class="">Software Developer</h4>
+                <hr />
+                <p class=" text-left">
+                    He rings a wealth of hardware and Mahmubul Hoque - Electrical Lead - brings a wealth of hardware and electrical engineering experience, obtained from both his previous coops and personal projects. At Tesla, Mahmubul was a Prototyping Engineer Intern,
+                    working with various controls systems and rapid hardware prototyping projects, developing his skills. This makes him an ideal candidate to lead the electrical side of the project
+                </p>
+            </div>
+
+            <div class="col-md-3 members">
+                <img class="img-circle" src="/img/team/Mihai.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="">Mihai Listov</h2>
+                <h4 class="">Mechanical Engineer</h4>
+                <hr />
+                <p class=" text-left">
+                    He has experience working with mechanical systems at General Motors and Massiv Automated Systems, along with software at Hootsuite. Mihai was lead software/mechanical on multiple school projects allowing him to know what is required for the job.
+                </p>
+            </div>
+
+            <div class="col-md-3 members">
+                <img class="img-circle" src="/img/team/Rahul.png" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="">Rahul Sehgal</h2>
+                <h4 class="">Hardware Engineer</h4>
+                <hr />
+                <p class=" text-left">
+                    He has a passion for hardware working with components since childhood. He has also done multiple coops working in software development.
+                </p>
+            </div>
+
         </div>
-      </section>
-<!--       <section class="features" id="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 features-leftcol wp2">
-              <h1>So Dreamy</h1>
-              <p class="margin-bottom">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h1>Apple Store</h1>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="contact">
+        <div id="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2>Contact us</h2>
+                            <form>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Subject">
+                                <textarea class="form-control" rows="3" id="textArea" placeholder="Message"></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="well well-lg">
+                            <h2>Our office</h2>
+                            <p>
+                                200 University Ave W, Waterloo, ON N2L 3G1
+                            </p>
+                            <div id="map"></div>
+                            <br>
+                            <p>
+                                You can reach us at <a href="mailto:Contactus@north60tech.com?subject=Contact">realfitvr@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 features-rightcol wp3">
-              <h1>More Buzz Words</h1>
-              <p class="margin-bottom">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h1>Extra Startup Juice</h1>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="try-btn">Try Demo</a>
-            </div>
-          </div>
         </div>
-      </section> -->
-<!--       <section class="design" id="design">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="secondSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour1"></div>
-                        <p class="title">Extra Startup Juice</p>
-                        <p class="feature-text">Added Feature</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour2"></div>
-                        <p class="title">So Thirsty</p>
-                        <p class="feature-text">Extra nice UI comes with the app</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 design-content">
-                      <h1>So flat you'll want to give it some shadows</h1>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour3"></div>
-                        <p class="title">Extra Startup Juice</p>
-                        <p class="feature-text">Added Feature</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour4"></div>
-                        <p class="title">So Thirsty</p>
-                        <p class="feature-text">Extra nice UI comes with the app</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 design-content">
-                      <h1>So flat you'll want to give it some shadows</h1>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-1 col-md-offset-11 text-right controls">
-                <a href="prev" class="prev"><i class="fa fa-angle-left fa-3x"></i></a>
-                <a href="next" class="next"><i class="fa fa-angle-right fa-3x"></i></a>
-              </div>
+        <div class="bgimg-3">
+            <div class="baseimg-3">
+                <div id="snow">
+
+                </div>
             </div>
-          </div>
         </div>
-      </section>
- -->      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="badge-btn">Badge Button</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="js/jquery.fancybox.pack.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js?v=1.7"></script>
-      <script src="js/jquery.flexslider.js"></script>
-      <script src="js/jquery.smooth-scroll.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script src="js/waypoints.min.js"></script>
-    </body>
-  </html>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoYRyCKiLeL2Cu2Dadb2OboPtaGzvWldQ&callback=initMap" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/ripples.min.js"></script>
+    <script src="/js/material.min.js"></script>
+
+
+
+</body>
+
+</html>
