@@ -366,10 +366,15 @@ Image credits: unsplash.com
 
 /*********************************/
 
-/* 			Bigger Glyphicon	 */
+/* 			Bigger and centered Glyphicon	 */
 
 /*********************************/
 
 .glyphicon-chevron-right {
     font-size: 100px;
+}
+
+.col-md-2 i {
+    display:block;
+    text-align:center
 }
