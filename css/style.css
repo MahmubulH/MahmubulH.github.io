@@ -363,3 +363,13 @@ Image credits: unsplash.com
     margin: auto;
     height: 60vh;
 }
+
+/*********************************/
+
+/* 			Bigger Glyphicon	 */
+
+/*********************************/
+
+.glyphicon-chevron-right {
+    font-size: 100px;
+}
