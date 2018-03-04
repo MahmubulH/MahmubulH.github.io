@@ -89,7 +89,7 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-left">New Squad</h2>
-          <p>September 16, 2017</p>
+          <p>September 23, 2017</p>
           <p>This week, we managed to find a fourth team member, yaaay! His name is Nhat Le and he's a software guru who's working with embedded software and front/backend web development. He's also pretty cool so he'll definitely fit with the team's social dynamic. Now the team is actually pretty versatile: I've got the electrical side, Mihai has the mechanical background, and Rahul has the hardware experience. With a strong team now found, we need to focus on finding a super cool idea. We've got a few, but we need to do a lot more research.
           <br>
           <br>
@@ -115,7 +115,7 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-left">Big Decision</h2>
-          <p>September 23, 2017</p>
+          <p>September 30, 2017</p>
           <p>After much deliberation and battle to the death, the team has decided to tackle the Smart Mirror idea. We started out with initial sketches and base ideas, but nothing concrete as of yet:
           <br>
           - Indoor use, residential -> power off 120V AC
@@ -135,20 +135,21 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-left">Initialization</h2>
-          <p>September 30, 2017</p>
+          <p>October 07, 2017</p>
           <p>Further research into the Smart Mirror taught us how little we really know. We need to work hard (ugh). Although, to continue with the project, we should set some basic goals and parameters for the project to help us stay on track.
           <br>
-              Team Roles
+              Team Roles:
               <br>
-              Mahmubul Hoque: Electrical/Project Manager
+              Mahmubul Hoque - Electrical/Project Manager
               <br>
-              Mihai Listov: Mechanical/Software
+              Mihai Listov - Mechanical/Software
               <br>
-              Nhat Le: Software/Hardware
+              Nhat Le - Software/Hardware
               <br>
-              Rahul Sehgal: Hardware/Electrical
+              Rahul Sehgal - Hardware/Electrical
               <br>
-              Objectives
+              <br>
+              Objectives:
               <br>
               - cost less than $400
               <br>
@@ -162,7 +163,8 @@
               <br>
               - determine best fit
               <br>
-              Constraints
+              <br>
+              Constraints:
               <br>
               - dimensions less than 100 x 60 x 10 cm
               <br>
@@ -176,21 +178,60 @@
         </div>
       </div>
     </div>
-      
   </div>
 
-  <div id="about" class="black-bg">
+  <div id="about" class="gray-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center">About</h2>
-          <br>
-          <p>Shopping online in the comfort of one’s home versus bustling shopping malls. The choice is obvious, but it’s not that simple. Meeting the rise of online shopping are issues that lean consumers away from it. One such issue is the lack of universal clothing metrics and variable body sizes, invalidating 100% fit guarantee. VR-Fitting has proposed an at-home solution that allows one to create a virtual model of themselves to try on clothes prior to purchase, encompassing motion, stretch, and style.
+          <h2 class="text-center">Patents</h2>
+          <p>October 14, 2017</p>
+          <p>Now that we have some parameters for our goal, we need to work towards making a prototype. Before that though, Tung mentioned we should look into other similar products and see if they have patents. It'll not only help us see what our competitors are doing, which would end up us ideas of what to add/improve, but also ensure we're not "stealing" any ideas. This is mainly because we would (ideally) be patenting our product. According to Nhat who's been focusing on this, there are many patents out there; though mayn seem abandoned and lots use avatars. To get out of the idea of using Avatars, I suggested we use live bodies. So instead of capturing live body dimensions and creating an avatar of the subject, we should just keep their bodies as it is and overlay on that. If we stick to using the Kinect, this won't pose an issue as the data streams support this already.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">How?</h2>
+          <p>October 21, 2017</p>
+          <p>Tung mentioned that we're going to be having a Preliminary Design Presentation to show the research we've done so far. For these, we'll see basic stuff (roles, objectives, contraints, and patents), as well as possible designs and a decision. The team has come up with some great designs so far:
+              <br>
+              <br>
+              Design 1
+              <br>
+              - Raspberry Pi + Raspberry Camera + Open CV
+              - low lost
+              - difficult (programming Pi + learning Open CV)
+              - not accurate (Pi cameras aren't the best)
+              <br>
+              <br>
+              Design 2
+              <br>
+              - Kinect + Windows + Unity
+              - high cost
+              - significantly easier
+              - accurate
+              <br>
+              <br>
+              From what it looks like, the team would rather go with Design 2 as it is overall better. We need to consider that we may not be able to patent the product since we're using a Kinect (though we can overcome this if we create our own Kinect?). Moreover, what is Unity? It is essentially software that supports the Kinect and we can use that to import clothing models into it, as well as add flexibility. The clothes will most likely be made on CAD software, such as SolidWorks.
+              <br>
+              <br>
+              
           </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Preliminary Design Presentation Roast</h2>
+          <p>October 28, 2017</p>
+          <p>So it turns out that either we did not communicate our product correctly or it simply is not a good enough project. I choose to believe the former. Tha main conflictions during the preliminary design prsentation was the fact that it did not encompass enough hardware/mechanical. To overcome this, the team has decided to build an enclosure for the product, which works out better for us at the end of the day. 
           <br>
-          <p>"Americans returned $260B in merchandise [in 2017]" <br> - National Retail Federation</p>
-          <p>"Shoppers often buy multiple sizes at a time because they're unsure of fit" <br> - Terry Lundgren, CEO of Macy's</p>
-          <p>"Customers return 40% of online clothes due to sizing issues" <br> - TIME Magazine</p>
+          <br>
+          Overall, we're going to have an enclosure with a 2Way mirror infront of a TV and Kinect. The Kinect will capture the user's body dimensions and send them to Unity. In the background, Unity will be pulling clothes from Solidworks and putting them into Unity as well. The program will then scale the clothes and display them on the TV, behind the mirror. The user themself will be looking at a reflection of themselves from the mirror with scaled clothes being overlayed on the TV.
+          </p>
         </div>
       </div>
     </div>
@@ -198,18 +239,22 @@
 
   <div id="about" class="white-bg">
     <div class="container">
-      <!-- Mihai -->
-      <!-- Heading Row -->
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center">About</h2>
-          <br>
-          <p>Shopping online in the comfort of one’s home versus bustling shopping malls. The choice is obvious, but it’s not that simple. Meeting the rise of online shopping are issues that lean consumers away from it. One such issue is the lack of universal clothing metrics and variable body sizes, invalidating 100% fit guarantee. VR-Fitting has proposed an at-home solution that allows one to create a virtual model of themselves to try on clothes prior to purchase, encompassing motion, stretch, and style.
-          </p>
-          <br>
-          <p>"Americans returned $260B in merchandise [in 2017]" <br> - National Retail Federation</p>
-          <p>"Shoppers often buy multiple sizes at a time because they're unsure of fit" <br> - Terry Lundgren, CEO of Macy's</p>
-          <p>"Customers return 40% of online clothes due to sizing issues" <br> - TIME Magazine</p>
+          <h2 class="text-center">Split</h2>
+          <p>November 04, 2017</p>
+          <p>Content</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Title</h2>
+          <p>Date</p>
+          <p>Content</p>
         </div>
       </div>
     </div>
