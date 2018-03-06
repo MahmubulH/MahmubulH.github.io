@@ -257,44 +257,44 @@
         <div class="col-md-12">
           <h2 class="text-left">Split</h2>
           <p>November 25, 2017</p>
-          <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable. 
+          <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable.</p>
+          <h3>Electrical</h3>
+            <p>There are two possible ways to implement the elctrical components:
             <br>
             <br>
-            Electrical:
+            Design 1: Simply plug all the components into a powerbar and have a single wall outlet.
             <br>
-            From the looks of it, there are two possible ways to implement the elctrical components. While I could make my life easy by doing Design 1, I'd like to follow Design 2. It would allow me to treat the project as an actual product, rather than "another assignment that I just want to finish". In order to move forward with it, I'll need to do a bit of resarch.
+            - Simplest
             <br>
-              Design 1: Simply plug all the components into a powerbar and have a single wall outlet.
-              <br>
-              - Simplest
-              <br>
-              - Most clutter, least organization
-              <br>
-              - Most mass due to the additional of individual AC/DC adapters
-              <br>
-              - Most thermal complication due to the work from multiple AC/DC adapters
-              <br>
-              Design 2: Replace individual adapters with single PDU
-              <br>
-              - Not simple, will require actual Engineering work
-              <br>
-              - Least clutter, most organization
-              <br>
-              - Less mass due to removal of multiple AC/DC adapters
-              <br>
-              - Lease thermal complication as the PDU will be producing most of the heat
-              <br>
-              <br>
-              Firstly, I'll need to ensure each device is receiving a proper voltage input in order to allow it to produce enough power to run. From the looks of it, I'll require a combination of 3V, 5V, and 12V DC for the PC components; though these are universal inputs so there's little to worry about when choosing between various components. For the TV, it'll require a 12V DC input. One thing I'll need to consider is that some TVs come with internal adapters, so there's only an AC outlet. Even if this is the case, it'll be one less thing to build a circuit for. The Kinect requires a 19V input and from initial outlooks, I'll probably use a boost converter; little power loss while being cheap.
-              <br>
-              <br>
-              Secondly, I'll need to consider whether I should make my own PDU or buy one. Building my own will allow me to control the inputs, interarior circuitry, and number of outputs; as well as allow me to flex my Electrical engineering knowledge. On the other hand, I'll need to put in additional effort, worry about receiving CSA approval, and possible make a mistake -> break the entire product (fingers crossed this does not happen). If I were to buy one, I would not have control of the PDU, but most PDUs produce the 3V, 5V, and 12V outputs we require, as well as contains built-in relays to ensure safety in case of power surges. Moreover, they would be CSA approved so it would be one less hassle to deal with. The team agrees it will be better to buy one, but we'll see.
+            - Most clutter, least organization
+            <br>
+            - Most mass due to the additional of individual AC/DC adapters
+            <br>
+            - Most thermal complication due to the work from multiple AC/DC adapters
+            <br>
+            Design 2: Replace individual adapters with single PDU
+            <br>
+            - Not simple, will require actual Engineering work
+            <br>
+            - Least clutter, most organization
+            <br>
+            - Less mass due to removal of multiple AC/DC adapters
+            <br>
+            - Lease thermal complication as the PDU will be producing most of the heat
             <br>
             <br>
-            Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to support all devices
+            While I could make my life easy by doing Design 1, I'd like to follow Design 2. It would allow me to treat the project as an actual product, rather than "another assignment that I just want to finish". In order to move forward with it, I'll need to do a bit of the following:
             <br>
-            Nhat Le - Software: Capture body image and overlay clothes
-          </p>
+            <br>
+            Firstly, I'll need to ensure each device is receiving a proper voltage input in order to allow it to produce enough power to run. From the looks of it, I'll require a combination of 3V, 5V, and 12V DC for the PC components; though these are universal inputs so there's little to worry about when choosing between various components. For the TV, it'll require a 12V DC input. One thing I'll need to consider is that some TVs come with internal adapters, so there's only an AC outlet. Even if this is the case, it'll be one less thing to build a circuit for. The Kinect requires a 19V input and from initial outlooks, I'll probably use a boost converter; little power loss while being cheap.
+            <br>
+            <br>
+            Secondly, I'll need to consider whether I should make my own PDU or buy one. Building my own will allow me to control the inputs, interarior circuitry, and number of outputs; as well as allow me to flex my Electrical engineering knowledge. On the other hand, I'll need to put in additional effort, worry about receiving CSA approval, and possible make a mistake -> break the entire product (fingers crossed this does not happen). If I were to buy one, I would not have control of the PDU, but most PDUs produce the 3V, 5V, and 12V outputs we require, as well as contains built-in relays to ensure safety in case of power surges. Moreover, they would be CSA approved so it would be one less hassle to deal with. The team agrees it will be better to buy one, but we'll see.
+            </p>
+          <h3>Mechanical</h3>
+            <p>For the enclosure, we'll need to figure out proper sizing, materials, and shape for the design. In terms of sizing, the entire enclosure will need to be big enough to fit a full size mirror (so the user can see their entire body), as well as a 40" TV, Kinect, and various computer components. In terms of materials, we will need to ensure the enclosure is as light as possible, yet able to support individual components. The reason mass is prioritized is because we are hoping this is an at-home product and no customer would want to carry around a heavy product. Mihai proposes we use balsa wood for the experior as it is very light. One problem is that balsa would is generally used as carving wood so it may not be able to support the mass of all components. Further solidworks research will need to be done. Rahul suggests we use alumunum for the back to keep the option of mounting open. The team agrees, but we will need to put in additional work to bend the alunimum if it comes down to it. Moreover, we will need to find a vendor for the 2Way mirror. Finally, in terms of shape, we will need to mimic a common household mirror; meaning it will either be an oval or square shape. Since there's going to be a rectangular monitor inside, we will most likely go towards a rectangular share; though additional solidworks analysis needs to be done.</p>
+          <h3>Software</h3>
+            <p>Nhat has download the Kinect SDK and already began playing around with it. It seems to be very user friendly and there is a large online community in case we need scripts or help with specific issues. Luckily there aren't many decisions that need to be made for the software, it's all a matter of just coding and continuing to code.</p>
         </div>
       </div>
     </div>
@@ -304,9 +304,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-left">Title</h2>
-          <p>Date</p>
-          <p>Content</p>
+          <h2 class="text-left">Prototype I</h2>
+          <p>December 16, 2017</p>
+          <h3>Electrical</h3>
+          <h3>Mechanical</h3>
+          <h3>Software</h3>
         </div>
       </div>
     </div>
