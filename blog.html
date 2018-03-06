@@ -131,6 +131,9 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="about" class="gray-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -178,9 +181,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div id="about" class="gray-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -201,16 +201,22 @@
               Design 1
               <br>
               - Raspberry Pi + Raspberry Camera + Open CV
+              <br>
               - low lost
+              <br>
               - difficult (programming Pi + learning Open CV)
+              <br>
               - not accurate (Pi cameras aren't the best)
               <br>
               <br>
               Design 2
               <br>
               - Kinect + Windows + Unity
+              <br>
               - high cost
+              <br>
               - significantly easier
+              <br>
               - accurate
               <br>
               <br>
@@ -227,7 +233,7 @@
         <div class="col-md-12">
           <h2 class="text-left">Preliminary Design Presentation Roast</h2>
           <p>October 28, 2017</p>
-          <p>So it turns out that either we did not communicate our product correctly or it simply is not a good enough project. I choose to believe the former. Tha main conflictions during the preliminary design prsentation was the fact that it did not encompass enough hardware/mechanical. To overcome this, the team has decided to build an enclosure for the product, which works out better for us at the end of the day. 
+          <p>So it turns out that either we did not communicate our product correctly or it simply is not a good enough project. I choose to believe the former. Tha main conflictions during the preliminary design prsentation was the fact that it did not encompass enough hardware/mechanical. To overcome this, the team has decided to build an enclosure for the product, which works out better for us at the end of the day. We will have an interactive display that people can play with during the symposium.
           <br>
           <br>
           Overall, we're going to have an enclosure with a 2Way mirror infront of a TV and Kinect. The Kinect will capture the user's body dimensions and send them to Unity. In the background, Unity will be pulling clothes from Solidworks and putting them into Unity as well. The program will then scale the clothes and display them on the TV, behind the mirror. The user themself will be looking at a reflection of themselves from the mirror with scaled clothes being overlayed on the TV.
@@ -242,7 +248,7 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-left">Split</h2>
-          <p>November 04, 2017</p>
+          <p>November 11, 2017</p>
           <p>Just like the One Piece hiatus, it was time for our own personal growth. The project foundations were pretty much set, so it was time for everyone to split off into their respective parts. I would focus on electrical, Rahul and Mihai would be focusing on Mechanical, and Nhat would be focusing on Software.
             <br>
             <br>
@@ -259,11 +265,39 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="text-left">Split</h2>
-          <p>November 04, 2017</p>
-          <p>Just like the One Piece hiatus, it was time for our own personal growth. The project foundations were pretty much set, so it was time for everyone to split off into their respective parts. I would focus on electrical, Rahul and Mihai would be focusing on Mechanical, and Nhat would be focusing on Software.
+          <p>November 25, 2017</p>
+          <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable. 
             <br>
             <br>
-            Mahmubul Hoque - Electrical: Power all devices via PDU
+            Electrical:
+            <br>
+            From the looks of it, there are two possible ways to implement the elctrical components.
+            <br>
+              Design 1: Simply plug all the components into a powerbar and have a single wall outlet.
+              <br>
+              - Simplest
+              <br>
+              - Most clutter, least organization
+              <br>
+              - Most mass due to the additional of individual AC/DC adapters
+              <br>
+              - Most thermal complication due to the work from multiple AC/DC adapters
+              <br>
+              Design 2: Replace individual adapters with single PDU
+              <br>
+              - Not simple, will require actual Engineering work
+              <br>
+              - Least clutter, most organization
+              <br>
+              - Less mass due to removal of multiple AC/DC adapters
+              <br>
+              - Lease thermal complication as the PDU will be producing most of the heat
+              <br>
+              <br>
+              While I could make my life easy by doing Design 1, I'd like to follow Design 2. It would allow me to treat the project as an actual product, rather than "another assignment that I just want to finish". In order to move forward with it, I'll need to do a bit of resarch.
+              <br>
+              Firstly, I'll need to ensure each device is receiving a proper voltage input in order to allow it to produce enough power to run. From the looks of it, I'll require a combination of 3V, 5V, and 12V DC for the PC components; though these are universal inputs so there's little to worry about when choosing between various components. For the TV, it'll require a 12V DC input. One thing I'll need to consider is that some TVs come with internal adapters, so there's only an AC outlet. Even if this is the case, it'll be one less thing to build a circuit for. The Kinect requires a 19V input and from initial outlooks, I'll probably use a boost converter; allow little power loss and it's very cheap.
+            <br>
             <br>
             Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to support all devices
             <br>
