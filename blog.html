@@ -92,8 +92,8 @@
     <div class="container">
         <h2 class="text-left">Big Decision</h2>
         <p>September 30, 2017</p>
-        <img src="img/model5.webp" alt="sketch1" style="width: 50px height=50px">
-        <img src="img/model6.webp" alt="sketch2" style="width: 50px height=50px">
+        <img src="img/model5.webp" alt="sketch1" style="height=50px">
+        <img src="img/model6.webp" alt="sketch2" style="height=50px">
         <p>After much deliberation and battle to the death, the team has decided to tackle the Smart Mirror idea. We started out with initial sketches and base ideas, but nothing concrete as of yet:
             <br>
             - Indoor use, residential -> power off 120V AC
@@ -111,140 +111,117 @@
 
   <div id="about" class="gray-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Initialization</h2>
-          <p>October 07, 2017</p>
-          <p>Further research into the Smart Mirror taught us how little we really know. We need to work hard (ugh). Although, to continue with the project, we should set some basic goals and parameters for the project to help us stay on track.
-          <br>
-          <br>
-              Team Roles:
-              <br>
-              Mahmubul Hoque - Electrical/Project Manager
-              <br>
-              Mihai Listov - Mechanical/Software
-              <br>
-              Nhat Le - Software/Hardware
-              <br>
-              Rahul Sehgal - Hardware/Electrical
-              <br>
-              <br>
-              Objectives:
-              <br>
-              - cost less than $400
-              <br>
-              - 24 weeks from idea -> working prototype
-              <br>
-              - one touch start (as least complicated as possible)
-              <br>
-              - capture body image of males
-              <br>
-              - overlay Tshirts, account for stretch
-              <br>
-              - determine best fit
-              <br>
-              <br>
-              Constraints:
-              <br>
-              - dimensions less than 100 x 60 x 10 cm
-              <br>
-              - run off Windows 10 laptop (so the customer can use their laptop)
-              <br>
-              - weight less than 10kg (*ince it's a home product, it shouldn't be too heavy)
-              <br>
-              - hardware accurate to 2" (step size between small, medium, large)
-              <br>
-          </p>
-        </div>
-      </div>
+        <h2 class="text-left">Initialization</h2>
+        <p>October 07, 2017</p>
+        <p>Further research into the Smart Mirror taught us how little we really know. We need to work hard (ugh). Although, to continue with the project, we should set some basic goals and parameters for the project to help us stay on track.
+        <br>
+        <br>
+        Team Roles:
+        <br>
+            Mahmubul Hoque - Electrical/Project Manager
+            <br>
+            Mihai Listov - Mechanical/Software
+            <br>
+            Nhat Le - Software/Hardware
+            <br>
+            Rahul Sehgal - Hardware/Electrical
+            <br>
+            <br>
+        Objectives:
+        <br>
+            - cost less than $400
+            <br>
+            - 24 weeks from idea -> working prototype
+            <br>
+            - one touch start (as least complicated as possible)
+            <br>
+            - capture body image of males
+            <br>
+            - overlay Tshirts, account for stretch
+            <br>
+            - determine best fit
+            <br>
+            <br>
+        Constraints:
+            <br>
+            - dimensions less than 100 x 60 x 10 cm
+            <br>
+            - run off Windows 10 laptop (so the customer can use their laptop)
+            <br>
+            - weight less than 10kg (*ince it's a home product, it shouldn't be too heavy)
+            <br>
+            - hardware accurate to 2" (step size between small, medium, large)
+            <br>
+        </p>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Patents</h2>
-          <p>October 14, 2017</p>
-          <p>Now that we have some parameters for our goal, we need to work towards making a prototype. Before that though, Tung mentioned we should look into other similar products and see if they have patents. It'll not only help us see what our competitors are doing, which would end up us ideas of what to add/improve, but also ensure we're not "stealing" any ideas. This is mainly because we would (ideally) be patenting our product. According to Nhat who's been focusing on this, there are many patents out there; though mayn seem abandoned and lots use avatars. To get out of the idea of using Avatars, I suggested we use live bodies. So instead of capturing live body dimensions and creating an avatar of the subject, we should just keep their bodies as it is and overlay on that. If we stick to using the Kinect, this won't pose an issue as the data streams support this already.</p>
-        </div>
-      </div>
+        <h2 class="text-left">Patents</h2>
+        <p>October 14, 2017</p>
+        <p>Now that we have some parameters for our goal, we need to work towards making a prototype. Before that though, Tung mentioned we should look into other similar products and see if they have patents. It'll not only help us see what our competitors are doing, which would end up us ideas of what to add/improve, but also ensure we're not "stealing" any ideas. This is mainly because we would (ideally) be patenting our product. According to Nhat who's been focusing on this, there are many patents out there; though mayn seem abandoned and lots use avatars. To get out of the idea of using Avatars, I suggested we use live bodies. So instead of capturing live body dimensions and creating an avatar of the subject, we should just keep their bodies as it is and overlay on that. If we stick to using the Kinect, this won't pose an issue as the data streams support this already.</p>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">How?</h2>
-          <p>October 21, 2017</p>
-          <p>Tung mentioned that we're going to be having a Preliminary Design Presentation to show the research we've done so far. For these, we'll see basic stuff (roles, objectives, contraints, and patents), as well as possible designs and a decision. The team has come up with some great designs so far:
-              <br>
-              <br>
-              Design 1
-              <br>
-              - Raspberry Pi + Raspberry Camera + Open CV
-              <br>
-              - low lost
-              <br>
-              - program Pi, learn Open CV, synchronize camera
-              <br>
-              - not accurate (Pi cameras aren't the best)
-              <br>
-              <br>
-              Design 2
-              <br>
-              - Kinect + Windows + Unity
-              <br>
-              - high cost
-              <br>
-              - program Kinect, abuse public scripts, learn Unity
-              <br>
-              - accurate
-              <br>
-              <br>
-              From what it looks like, the team would rather go with Design 2. In terms of complexity and price, we would be force to put in more effort and money. On the other hand, we would be producing a better product with higher accuracy. We need to consider that we may not be able to patent the product since we're using a Kinect (though we can overcome this if we create our own Kinect?). Moreover, what is Unity? It is essentially software that supports the Kinect and we can use that to import clothing models into it, as well as add flexibility. The clothes will most likely be made on CAD software, such as SolidWorks.
-              <br>
-              <br>
-              
-          </p>
-        </div>
-      </div>
+        <h2 class="text-left">How?</h2>
+        <p>October 21, 2017</p>
+        <p>Tung mentioned that we're going to be having a Preliminary Design Presentation to show the research we've done so far. For these, we'll see basic stuff (roles, objectives, contraints, and patents), as well as possible designs and a decision. The team has come up with some great designs so far:
+        <br>
+        <br>
+        Design 1
+        <br>
+            - Raspberry Pi + Raspberry Camera + Open CV
+            <br>
+            - low lost
+            <br>
+            - program Pi, learn Open CV, synchronize camera
+            <br>
+            - not accurate (Pi cameras aren't the best)
+            <br>
+            <br>
+        Design 2
+        <br>
+            - Kinect + Windows + Unity
+            <br>
+            - high cost
+            <br>
+            - program Kinect, abuse public scripts, learn Unity
+            <br>
+            - accurate
+            <br>
+            <br>
+        From what it looks like, the team would rather go with Design 2. In terms of complexity and price, we would be force to put in more effort and money. On the other hand, we would be producing a better product with higher accuracy. We need to consider that we may not be able to patent the product since we're using a Kinect (though we can overcome this if we create our own Kinect?). Moreover, what is Unity? It is essentially software that supports the Kinect and we can use that to import clothing models into it, as well as add flexibility. The clothes will most likely be made on CAD software, such as SolidWorks.
+        <br>
+        <br>
+        </p>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Preliminary Design Presentation Roast</h2>
-          <p>October 28, 2017</p>
-          <p>So it turns out that either we did not communicate our product correctly or it simply is not a good enough project. I choose to believe the former. Tha main conflictions during the preliminary design prsentation was the fact that it did not encompass enough hardware/mechanical. To overcome this, the team has decided to build an enclosure for the product, which works out better for us at the end of the day. We will have an interactive display that people can play with during the symposium.
-          <br>
-          <br>
-          Overall, we're going to have an enclosure with a 2Way mirror infront of a TV and Kinect. The Kinect will capture the user's body dimensions and send them to Unity. In the background, Unity will be pulling clothes from Solidworks and putting them into Unity as well. The program will then scale the clothes and display them on the TV, behind the mirror. The user themself will be looking at a reflection of themselves from the mirror with scaled clothes being overlayed on the TV.
-          </p>
-        </div>
-      </div>
+        <h2 class="text-left">Preliminary Design Presentation Roast</h2>
+        <p>October 28, 2017</p>
+        <p>So it turns out that either we did not communicate our product correctly or it simply is not a good enough project. I choose to believe the former. Tha main conflictions during the preliminary design prsentation was the fact that it did not encompass enough hardware/mechanical. To overcome this, the team has decided to build an enclosure for the product, which works out better for us at the end of the day. We will have an interactive display that people can play with during the symposium.
+        <br>
+        <br>
+        Overall, we're going to have an enclosure with a 2Way mirror infront of a TV and Kinect. The Kinect will capture the user's body dimensions and send them to Unity. In the background, Unity will be pulling clothes from Solidworks and putting them into Unity as well. The program will then scale the clothes and display them on the TV, behind the mirror. The user themself will be looking at a reflection of themselves from the mirror with scaled clothes being overlayed on the TV.
+        </p>
     </div>
   </div>
 
   <div id="about" class="white-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Split</h2>
-          <p>November 11, 2017</p>
-          <p>Just like the One Piece hiatus, it was time for our own personal growth. The project foundations were pretty much set, so it was time for everyone to split off into their respective parts. I would focus on electrical, Rahul and Mihai would be focusing on Mechanical, and Nhat would be focusing on Software.
-            <br>
-            <br>
-            Mahmubul Hoque - Electrical: Power all devices via PDU
-            <br>
-            Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to support all devices
-            <br>
-            Nhat Le - Software: Capture body image and overlay clothes
-          </p>
-        </div>
-      </div>
+        <h2 class="text-left">Split</h2>
+        <p>November 11, 2017</p>
+        <p>Just like the One Piece hiatus, it was time for our own personal growth. The project foundations were pretty much set, so it was time for everyone to split off into their respective parts. I would focus on electrical, Rahul and Mihai would be focusing on Mechanical, and Nhat would be focusing on Software.
+        <br>
+        <br>
+        Mahmubul Hoque - Electrical: Power all devices via PDU
+        <br>
+        Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to support all devices
+        <br>
+        Nhat Le - Software: Capture body image and overlay clothes
+        </p>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Split</h2>
-          <p>November 25, 2017</p>
-          <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable.</p>
-          <h3>Electrical</h3>
+        <h2 class="text-left">Split</h2>
+        <p>November 25, 2017</p>
+        <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable.</p>
+        <h3>Electrical</h3>
             <p>There are two possible ways to implement the elctrical components:
             <br>
             <br>
@@ -278,33 +255,36 @@
             <br>
             Secondly, I'll need to consider whether I should make my own PDU or buy one. Building my own will allow me to control the inputs, interarior circuitry, and number of outputs; as well as allow me to flex my Electrical engineering knowledge. On the other hand, I'll need to put in additional effort, worry about receiving CSA approval, and possible make a mistake -> break the entire product (fingers crossed this does not happen). If I were to buy one, I would not have control of the PDU, but most PDUs produce the 3V, 5V, and 12V outputs we require, as well as contains built-in relays to ensure safety in case of power surges. Moreover, they would be CSA approved so it would be one less hassle to deal with. The team agrees it will be better to buy one, but we'll see.
             </p>
-          <h3>Mechanical</h3>
+        <h3>Mechanical</h3>
             <p>For the enclosure, we'll need to figure out proper sizing, materials, and shape for the design. In terms of sizing, the entire enclosure will need to be big enough to fit a full size mirror (so the user can see their entire body), as well as a 40" TV, Kinect, and various computer components. In terms of materials, we will need to ensure the enclosure is as light as possible, yet able to support individual components. The reason mass is prioritized is because we are hoping this is an at-home product and no customer would want to carry around a heavy product. Mihai proposes we use balsa wood for the experior as it is very light. One problem is that balsa would is generally used as carving wood so it may not be able to support the mass of all components. Further solidworks research will need to be done. Rahul suggests we use alumunum for the back to keep the option of mounting open. The team agrees, but we will need to put in additional work to bend the alunimum if it comes down to it. Moreover, we will need to find a vendor for the 2Way mirror. Finally, in terms of shape, we will need to mimic a common household mirror; meaning it will either be an oval or square shape. Since there's going to be a rectangular monitor inside, we will most likely go towards a rectangular share; though additional solidworks analysis needs to be done.</p>
-          <h3>Software</h3>
+        <h3>Software</h3>
             <p>Nhat has download the Kinect SDK and already began playing around with it. It seems to be very user friendly and there is a large online community in case we need scripts or help with specific issues. Luckily there aren't many decisions that need to be made for the software, it's all a matter of just coding and continuing to code.</p>
-        </div>
-      </div>
     </div>
-
   </div>
   <div id="about" class="gray-bg">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-left">Prototype I</h2>
-          <p>December 16, 2017</p>
-          <h3>Electrical</h3>
+        <h2 class="text-left">Prototype I</h2>
+        <p>December 16, 2017</p>
+        <h3>Electrical</h3>
             <div class="col-sm-6 text-left">
-                <img src="img/circuit.jpg" alt="circuit">
+                <img src="img/circuitsimple.jpg" alt="circuit">
             </div>
             <div class="col-sm-6">
                 <p>As seen on the left, the circuit is very simple. What we have is a simple 120V AC from one's power outlet to the PSU (power supply). From the PSU, the 3V, 5V, and 12V lines will be sent to the PC parts (though it doesn't show the 12V, it's there, I just got lazy). A parallel line from the 12V is taken and sent to the Kinect sensor. Another parallel line is taken from the 12V and sent to a boost converter, which outputs the 19V required for most TVs. Given a 25% redundancy factor, the components require a total of 400W -> we require a 400W PSU. Further research will need to be done, but this design will support the most important systems. I'd also like to put in additional research into backlights (since we are using a 2Way mirror), USB-inputs, etc; just to give additional "nice-to-haves" for the product.</p>
             </div>
-          <h3>Mechanical</h3>
-            <img src="img/circuit.jpg" alt="circuit">
-          <h3>Software</h3>
-        </div>
-      </div>
+        <h3>Mechanical</h3>
+            <img src="img/model1.webp" alt="model1">
+            <img src="img/model2.webp" alt="model2">
+            <img src="img/model3.webp" alt="model3">
+            <img src="img/model4.webp" alt="model4">
+            <p>These are the initial models that had been built in Solidworks. As one can see, it is a simple rectangular, wooden enclosure. The TV is support by two 2x4s, which are loaded onto the frame. The Kinect rests an thin plank of wood underneath the TV because the Kinect yields the best results when it is at waist level. Finally, the computer components are placed at the bottom to lower the center of gravity and prevent too much bending at the top from the TV. Finally, the mirror is glued infront of all of these. Solidworks analysis states that balsa wood is able to support all the of mass. Moreover, in order to perform thermal analysis of the computer components, we will need to find a thermal gun or probes; this will be done later.</p>
+        <h3>Software</h3>
+            <div class="col-sm-6 text-left">
+                <img src="img/swdev.jpg" alt="software">
+            </div>
+            <div class="col-sm-6">
+                <p>Nhat has figured out the basic workflow that works best for our project. Firstly, the Kinect capture the body of the user and sends it to the SDK. From here, the data streams are filtered so only the body proportions are held. Simultaneously, clothing from solidworks are pulled into Unity and send to me process along with the body proportions. The final image to be output on the monitor is the scaled clothing along with a recommendation of fit.</p>
+            </div>
     </div>
   </div>
 
