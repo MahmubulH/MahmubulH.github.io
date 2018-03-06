@@ -113,8 +113,8 @@
         <li>24 weeks from idea -> working prototype</li>
         <li>one touch start (as least complicated as possible)</li>
         <li>capture body image of males</li>
-        <li>- overlay Tshirts, account for stretch</li>
-        <li>- determine best fit</li>
+        <li>overlay Tshirts, account for stretch</li>
+        <li>determine best fit</li>
         <br>
         Constraints:
         <li>dimensions less than 100 x 60 x 10 cm</li>
@@ -159,15 +159,15 @@
         <p>November 11, 2017</p>
         <p>Just like the One Piece hiatus, it was time for our own personal growth. The project foundations were pretty much set, so it was time for everyone to split off into their respective parts. I would focus on electrical, Rahul and Mihai would be focusing on Mechanical, and Nhat would be focusing on Software.</p>
         <br>
-        <p>Mahmubul Hoque - Electrical: Power all devices via PDU</p>
-        <p>Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to support all devices</p>
+        <p>Mahmubul Hoque - Electrical: Power all devices</p>
+        <p>Rahul Sehgal/Mihai Listov - Mechanical: Build enclosure to hold all devices</p>
         <p>Nhat Le - Software: Capture body image and overlay clothes</p>
     </div>
     <div class="container">
         <h2 class="text-left">Technical</h2>
         <p>November 25, 2017</p>
         <p>From here on, we're going to be posting in a bit more detail so hopefully it doesn't get too boring. We've finally decided on the Smart Mirror Idea, which we've titled AR Fitting. Again, to re-iterate, I will be focusing on Electrical, Rahul+Mihai will be focusing on Mechanical, and Nhat will be focusing on Software. Ofcourse we'll help each other out but in terms of resposiblity, they'll be the Engineers held accountable.</p>
-        <h4>Electrical</h4>
+        <h3>Electrical</h3>
         <p>Design 1: Simply plug all the components into a powerbar and have a single wall outlet.</p>
         <li>simplest</li>
         <li>most clutter (# of components)</li>
@@ -184,9 +184,9 @@
         <p>Firstly, I'll need to ensure each device is receiving a proper voltage input in order to allow it to produce enough power to run. From the looks of it, I'll require a combination of 3V, 5V, and 12V DC for the PC components; though these are universal inputs so there's little to worry about when choosing between various components. For the TV, it'll require a 12V DC input. One thing I'll need to consider is that some TVs come with internal adapters, so there's only an AC outlet. Even if this is the case, it'll be one less thing to build a circuit for. The Kinect requires a 19V input and from initial outlooks, I'll probably use a boost converter; little power loss while being cheap.</p>
         <br>
         <p>Secondly, I'll need to consider whether I should make my own PDU or buy one. Building my own will allow me to control the inputs, interarior circuitry, and number of outputs; as well as allow me to flex my Electrical engineering knowledge. On the other hand, I'll need to put in additional effort, worry about receiving CSA approval, and possible make a mistake -> break the entire product (fingers crossed this does not happen). If I were to buy one, I would not have control of the PDU, but most PDUs produce the 3V, 5V, and 12V outputs we require, as well as contains built-in relays to ensure safety in case of power surges. Moreover, they would be CSA approved so it would be one less hassle to deal with. The team agrees it will be better to buy one, but we'll see.</p>
-        <h4>Mechanical</h4>
+        <h3>Mechanical</h3>
         <p>For the enclosure, we'll need to figure out proper sizing, materials, and shape for the design. In terms of sizing, the entire enclosure will need to be big enough to fit a full size mirror (so the user can see their entire body), as well as a 40" TV, Kinect, and various computer components. In terms of materials, we will need to ensure the enclosure is as light as possible, yet able to support individual components. The reason mass is prioritized is because we are hoping this is an at-home product and no customer would want to carry around a heavy product. Mihai proposes we use balsa wood for the experior as it is very light. One problem is that balsa would is generally used as carving wood so it may not be able to support the mass of all components. Further solidworks research will need to be done. Rahul suggests we use alumunum for the back to keep the option of mounting open. The team agrees, but we will need to put in additional work to bend the alunimum if it comes down to it. Moreover, we will need to find a vendor for the 2Way mirror. Finally, in terms of shape, we will need to mimic a common household mirror; meaning it will either be an oval or square shape. Since there's going to be a rectangular monitor inside, we will most likely go towards a rectangular share; though additional solidworks analysis needs to be done.</p>
-        <h4>Software</h4>
+        <h3>Software</h3>
         <p>Nhat has download the Kinect SDK and already began playing around with it. It seems to be very user friendly and there is a large online community in case we need scripts or help with specific issues. Luckily there aren't many decisions that need to be made for the software, it's all a matter of just coding and continuing to code.</p>
     </div>
   </div>
@@ -194,20 +194,21 @@
     <div class="container">
         <h2 class="text-left">First Design</h2>
         <p>December 16, 2017</p>
-        <h4>Electrical</h4>
+        <h3>Electrical</h3>
             <div class="col-sm-6 text-left">
                 <img src="img/circuitsimple.jpg" alt="circuit">
             </div>
             <div class="col-sm-6">
                 <p>As seen on the left, the circuit is very simple. What we have is a simple 120V AC from one's power outlet to the PSU (power supply). From the PSU, the 3V, 5V, and 12V lines will be sent to the PC parts (though it doesn't show the 12V, it's there, I just got lazy). A parallel line from the 12V is taken and sent to the Kinect sensor. Another parallel line is taken from the 12V and sent to a boost converter, which outputs the 19V required for most TVs. Given a 25% redundancy factor, the components require a total of 400W -> we require a 400W PSU. Further research will need to be done, but this design will support the most important systems. I'd also like to put in additional research into backlights (since we are using a 2Way mirror), USB-inputs, etc; just to give additional "nice-to-haves" for the product.</p>
             </div>
-        <h4>Mechanical</h4>
+        <br>
+        <h3>Mechanical</h3>
             <img src="img/model1.webp" alt="model1" style="height: 50px">
             <img src="img/model2.webp" alt="model2" style="height: 50px">
             <img src="img/model3.webp" alt="model3" style="height: 50px">
             <img src="img/model4.webp" alt="model4" style="height: 50px">
             <p>These are the initial models that had been built in Solidworks. As one can see, it is a simple rectangular, wooden enclosure. The TV is support by two 2x4s, which are loaded onto the frame. The Kinect rests an thin plank of wood underneath the TV because the Kinect yields the best results when it is at waist level. Finally, the computer components are placed at the bottom to lower the center of gravity and prevent too much bending at the top from the TV. Finally, the mirror is glued infront of all of these. Solidworks analysis states that balsa wood is able to support all the of mass. Moreover, in order to perform thermal analysis of the computer components, we will need to find a thermal gun or probes; this will be done later.</p>
-        <h4>Software</h4>
+        <h3>Software</h3>
             <div class="col-sm-6 text-left">
                 <img src="img/swdev.jpg" alt="software">
             </div>
@@ -227,15 +228,15 @@
         <h2 class="text-left">Welcome Back!</h2>
         <p>January 13, 2017</p>
         <p>Hey guys, we're back! Along with that, we've made purchases for our project. This is what's been done so far:</p>
-        <h4>Electrical</h4>
+        <h3>Electrical</h3>
             <li>obtained free Kinect from Tung</li>
             <li>purchased 500W PSU off Amazon</li>
             <li>purchased 40" TV at Best Buy aka take advantage of Boxing Day Salez</li>
-        <h4>Mechanical</h4>
+        <h3>Mechanical</h3>
             <li>purchased wood for frame</li>
             <li>free tools from Mihai's dad</li>
             <li>purchased nuts and bolts</li>
-        <h4>Software</h4>
+        <h3>Software</h3>
             <p>Nhat's got the first prototype of the product done! Here's a video of what it looks like:</p>
             <video width="320" height="240" controls>
             <source src="prototype.mp4" type="video/mp4">
@@ -246,11 +247,11 @@
     <div class="container">
         <h2 class="text-left">Prototype I</h2>
         <p>January 27, 2017</p>
-        <h4>Electrical</h4>
+        <h3>Electrical</h3>
         <p>Some major revisions have been made to the electrical side of the project. Firstly, the team had voted on not purchasing PC components to be put into the enclosure. While this would best replicate what the final product would look like, it increases our budget significantly. So instead, we will just run the software off one of our laptops. If anything, we could market this strategy as a cheaper alternative; rather than buy an all-in-one enclosure, buy one minus the computer parts and save money by using your own computer to run the software. The only downside would be those customers that do not have the hardware that is required to run the arduous computations.</p>
         <h4>Mechanical</h4>
         <img src="img/mechprototype.webp" alt="mechprototype" style="height: 10px">
-        <h4>Software</h4>
+        <h3>Software</h3>
     </div>
   </div>
 
