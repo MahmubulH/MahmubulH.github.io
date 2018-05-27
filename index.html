@@ -1,262 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-
-  <title>ARFit - Augmented Reality Fitting Room</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/animate.css">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <link href="/css/bootstrap-material-design.min.css" rel="stylesheet">
-  <link href="/css/ripples.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mahmubul Hoque's Website">
+    <meta name="author" content="Mahmubul Hoque">
+    
+    <title>MahmubulH.github.io</title>
+    
+    <!-- FAVICON -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/ico">
+    
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- SOCIAL MEDIA ICONES -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 </head>
 
 <header>
-  <div id="navbar-example">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class=logo href="index.html"><img src="img/logo.png" alt="logo" height="50"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="work.html">Work Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resumes.html">Resumes</a></li>
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#welcome" class="searchterm">Home</a></li>
-            <li><a href="#about" class="searchterm">About</a></li>
-            <li><a href="#team" class="searchterm">Team</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#contact" class="searchterm">Contact</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-    </nav>
-  </div>
+    </div>
 </header>
-
+  
 <body>
-  <div id="welcome">
-    <div class="bgimg-1">
-      <img src="img/logo.webp" alt="North60Logo" class="logo">
-      <div class="baseimg-1">
-      </div>
-    </div>
-  </div>
-
-  <div id="about" class="white-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-center">About</h2>
-          <br>
-          <p>Picture shopping online in the comfort of one’s home instead of a bustling shopping mall - no noise, no traffic, no hassle! Now yes, this is great, but I've tried shopping online and the clothes never fit. Well, we can fix that with our new product - AR Fitting. This at home solution not only allows you to create a virtual avatar of yourself, but also try on the newest clothes and fashion right at home. You can see how it looks on you, you can stretch to see if it really does fit, and you can give it a little twirl for some action shots. AR Fitting guarantees great fit and style.
-          
-          <!-- Shopping online in the comfort of one’s home versus bustling shopping malls. The choice is obvious, but it’s not that simple. Meeting the rise of online shopping are issues that lean consumers away from it. One such issue is the lack of universal clothing metrics and variable body sizes, invalidating 100% fit guarantee. VR-Fitting has proposed an at-home solution that allows one to create a virtual model of themselves to try on clothes prior to purchase, encompassing motion, stretch, and style. -->
-          </p>
-          <br>
-          <p>"Americans returned $260B in merchandise [in 2017]" <br> - National Retail Federation</p>
-          <p>"Shoppers often buy multiple sizes at a time because they're unsure of fit" <br> - Terry Lundgren, CEO of Macy's</p>
-          <p>"Customers return 40% of online clothes due to sizing issues" <br> - TIME Magazine</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bgimg-2">
-    <div class="baseimg-2">
-      <div class="foreground">
-      </div>
-    </div>
-  </div>
-
-<!--
-  <div id="progress" class="white-bg">
-    <div class="container">
-      <br>
-      <h2 class="text-center">Progress</h2>
-      <br>
-      <div class="row text-center" style="padding-left:15%">
-        <div class="col-md-2 members">
-          <div class="thumbnail">
-            <img src="/img/model5.webp" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <div class="col-md-2 members">
-          <div class="thumbnail">
-            <img src="/img/model3.webp" alt="Generic placeholder image">
-          </div>
-
-        </div>
-
-        <div class="col-md-2 members">
-          <div class="thumbnail">
-            <img src="/img/model2.webp" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <div class="col-md-2 members">
-          <div class="thumbnail">
-            <img src="/img/model4.webp" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <div class="col-md-2 members">
-          <div class="thumbnail">
-            <img src="/img/model1.webp" alt="Generic placeholder image">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
--->
-
-  <div id="team" class="gray-bg" style="background-color: #707070">
-    <br>
-    <h2 class="text-center">Team</h2>
-    <br>
-    <div class="row text-center">
-      <div class="col-md-3 members">
-        <img class="img-circle" src="/img/Momo.webp" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="">Mahmubul Hoque</h2>
-        <h4 class="">Project Manager, Electrical Engineer</h4>
-        <hr />
-        <p class="text-left"> He brings a wealth of hardware and electrical engineering experience, obtained from both his previous coops and personal projects. At Tesla, Mahmubul was a Prototyping Engineer, working with various controls systems and rapid hardware prototyping projects, developing his skills.
-        </p>
-      </div>
-
-      <div class="col-md-3 members">
-        <img class="img-circle" src="/img/Nhat.webp" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="">Nhat Le</h2>
-        <h4 class="">Software Engineer</h4>
-        <hr />
-        <p class=" text-left"> He has experience in software engineering, with exposure to both low and high-level software development. He has experience with embedded software development with Arduino projects. Nhat has also worked with a variety of software end-to-end workflows, from needs to final development and maintenance. He has extensive experience with software troubleshooting and bug fixing.
-        </p>
-      </div>
-
-      <div class="col-md-3 members">
-        <img class="img-circle" src="/img/Mihai.webp" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="">Mihai Listov</h2>
-        <h4 class="">Mechanical Engineer</h4>
-        <hr />
-        <p class=" text-left"> He has experience working with mechanical systems at General Motors and Massiv Automated Systems, along with software at Hootsuite. He was lead software/mechanical on multiple school projects allowing him to know what is required for the job.
-        </p>
-      </div>
-
-      <div class="col-md-3 members">
-        <img class="img-circle" src="/img/Rahul.webp" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="">Rahul Sehgal</h2>
-        <h4 class="">Hardware Engineer</h4>
-        <hr />
-        <p class=" text-left">He has a passion for hardware and working with components since childhood. He has also done software coops at Magna International, Bombardier Aerospace, YellowPages as well as a hardware coop at Blackberry Corp.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div id="teampictures" class="white-bg" style="background-color:#000;">
-    <br>
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="10000" id="bs-carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#bs-carousel" data-slide-to="1"></li>
-        <li data-target="#bs-carousel" data-slide-to="2"></li>
-        <li data-target="#bs-carousel" data-slide-to="3"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item slides active">
-          <img src="/img/1.webp">
-        </div>
-        <div class="item slides">
-          <img src="/img/2.webp">
-        </div>
-        <div class="item slides">
-          <img src="/img/3.webp">
-        </div>
-        <div class="item slides">
-          <img src="/img/4.webp">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact">
-    <div id="contact-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="well">
-              <h2>Contact us</h2>
-              <form>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Subject">
-                <textarea class="form-control" rows="3" id="textArea" placeholder="Message"></textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+    <div class="container" style="margin-bottom: 55px">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <h1>Mahmubul Hoque</h1>
+                    <p>I'm a Mechatronics Engineering Student from the University of Waterloo. Currently, I am in my 4th year, expecting to Graduate in April, 2018. As such, I am on the hunt for a rewarding full time position to pave my future. If you are looking for a goofy, yet hardworking Engineer, feel free to get in touch!</p>
+                    <p><b>Email:</b><font style="color: #5cb85c"> MahmubulH@Gmail.com</font></p>
+                    <p><b>Phone:</b><font style="color: #5cb85c"> (289) 689-5649</font></p>
+                </div>
+                <div class="col-sm-6">
+                    <a class="thumbnail"><img src="img/profile.jpg" alt="frontpic"></a>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="well well-lg">
-              <h2>Our office</h2>
-              <p>
-                200 University Ave W, Waterloo, ON N2L 3G1
-              </p>
-              <div id="map"></div>
-              <br>
-              <p>
-                You can reach us at <a href="mailto:ARFitOfficial@gmail.com?subject=Contact">ARFitOfficial@gmail.com</a>
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="bgimg-3">
-      <div class="baseimg-3">
-        <div id="snow">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
+    
+<footer>
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="navbar-text pull-left">
+                <p>Copyright Momo</p>
+            </div>
+            <div class="navbar-text pull-right">
+                <a href="https://www.facebook.com/Muhmmbles"><i class="fa fa-facebook-square fa-2x" style="color: #3b5998"></i></a>
+                <a href="https://ca.linkedin.com/in/mahmubul-hoque-1429018a"><i class="fa fa-linkedin-square fa-2x" style="color: #007bb5"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+<modal>
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="text-align: center"><b>Contact</b></h4>
+                    <a class="btn btn-close" data-dismiss="modal">X</a>
+                </div>
+                <form class="form-horizontal" role="form" action="contact.php" method="post">
+                    <div class="modal-body">
+                        <p>Email: <font style="color: #5cb85c">MahmubulH@Gmail.com</font></p>
+                        <p>Phone: <font style="color: #5cb85c">(289) 689-5649</font></p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://www.facebook.com/Muhmmbles"><i class="fa fa-facebook-square fa-2x" style="color: #3b5998"></i></a>
+                        <a href="https://ca.linkedin.com/in/mahmubul-hoque-1429018a"><i class="fa fa-linkedin-square fa-2x" style="color: #007bb5"></i></a>
+                    </div>
+<!--
+                    <div class="modal-footer">
+                        <input class="btn btn-default" type="submit" value="Submit">
+                        <input class="btn btn-default" type="reset" value="Clear">
+                    </div>
+-->
+                </form>
+            </div>
+        </div>
+    </div>
+</modal>
 
-<script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoYRyCKiLeL2Cu2Dadb2OboPtaGzvWldQ&callback=initMap" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script>
-  new WOW().init();
-  </script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/ripples.min.js"></script>
-  <script src="/js/material.min.js"></script>
-</script>
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<!-- Plug-ins -->
+<script src="js/bootstrap.min.js"></script>
 </html>
