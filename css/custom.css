@@ -1,0 +1,416 @@
+/*Normal Text*/
+p {
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+p1 {
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+li {
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+}
+h2 {
+    color: #5cb85c;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+h3 {
+    color: #5cb85c;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 20px;
+  line-height: 20px;
+}
+/*Big Screen*/
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+.jumbotron h1 {
+    color: #5cb85c;
+}
+h1 {
+font-size: 50px;
+font-weight: 200;
+color: #5cb85c;
+}
+
+/*Navigation Bar*/
+.logo {
+    padding-left: 15px;
+}
+.navbar-inverse {
+    background-color: black;
+    border-color: white;
+    font-family: "Open Sans"; /*monospace*/
+}
+.navbar-inverse .navbar-brand {
+    color: #5cb85c;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: black;
+    background-color: #5cb85c;
+}
+.navbar-inverse .navbar-text {
+    color: black; /*9d9d9d*/
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #5cb85c;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: black;
+    background-color: #5cb85c;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: #5cb85c;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    /*Doesn't do anything*/
+    color: black;
+    background-color: black;
+}
+
+.customwidth {
+    width: 155px !important;
+}
+/*Custom Button*/
+    /* OFF State */
+    .btn-custom {
+      color: blue; /*#333*/
+      background-color: blue; /*#fff*/
+      border-color: blue; /*#ccc*/
+    }
+    /* ON State */
+    .btn-custom:focus,
+    .btn-custom.focus {
+      color: blue; /*#333*/
+      background-color: blue; /*#e6e6e6*/
+      border-color: blue; /*#8c8c8c*/
+    }
+    /* Hover State */
+    .btn-custom:hover {
+      color: blue; /*#fff*/
+      background-color: blue; /*#e6e6e6*/
+      border-color: blue; /*#adadad*/
+    }
+    /* Press State*/
+    .btn-custom:active:hover,
+    .btn-custom.active:hover,
+    .open > .dropdown-toggle.btn-custom:hover,
+    .btn-custom:active:focus,
+    .btn-custom.active:focus,
+    .open > .dropdown-toggle.btn-custom:focus,
+    .btn-custom:active.focus,
+    .btn-custom.active.focus,
+    .open > .dropdown-toggle.btn-custom.focus {
+      color: blue; /*#333*/
+      background-color: blue; /*#d4d4d4*/
+      border-color: blue; /*#8c8c8c*/
+    }
+
+/*Default Button*/
+    /* OFF State */
+    .btn-default {
+      color: black; /*#333*/
+      background-color: white; /*#fff*/
+      border-color: black; /*#ccc*/
+    }
+    /* ON State */
+    .btn-default:focus,
+    .btn-default.focus {
+      color: white; /*#333*/
+      background-color: black; /*#e6e6e6*/
+      border-color: white; /*#8c8c8c*/
+    }
+    /* Hover State */
+    .btn-default:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#e6e6e6*/
+      border-color: black; /*#adadad*/
+    }
+    /* Press State*/
+    .btn-default:active:hover,
+    .btn-default.active:hover,
+    .open > .dropdown-toggle.btn-default:hover,
+    .btn-default:active:focus,
+    .btn-default.active:focus,
+    .open > .dropdown-toggle.btn-default:focus,
+    .btn-default:active.focus,
+    .btn-default.active.focus,
+    .open > .dropdown-toggle.btn-default.focus {
+      color: white; /*#333*/
+      background-color: black; /*#d4d4d4*/
+      border-color: white; /*#8c8c8c*/
+    }
+
+/*Close Button*/
+    /* OFF State */
+    .btn-close {
+      color: black; /*#333*/
+      background-color: white; /*#fff*/
+      border-color: black; /*#ccc*/
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    /* ON State */
+    .btn-close:focus,
+    .btn-close.focus {
+      color: white; /*#333*/
+      background-color: black; /*#e6e6e6*/
+      border-color: white; /*#8c8c8c*/
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    /* Hover State */
+    .btn-close:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#e6e6e6*/
+      border-color: black; /*#adadad*/
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+    /* Press State*/
+    .btn-close:active:hover,
+    .btn-close.active:hover,
+    .open > .dropdown-toggle.btn-close:hover,
+    .btn-close:active:focus,
+    .btn-close.active:focus,
+    .open > .dropdown-toggle.btn-close:focus,
+    .btn-close:active.focus,
+    .btn-close.active.focus,
+    .open > .dropdown-toggle.btn-close.focus {
+      color: white; /*#333*/
+      background-color: black; /*#d4d4d4*/
+      border-color: white; /*#8c8c8c*/
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+/*Primary Button*/
+    /* OFF State */
+    .btn-primary {
+      color: black; /*#fff*/
+      background-color: white; /*#337ab7*/
+      border-color: black; /*#2e6da4*/
+    }
+    /* ON State */
+    .btn-primary:focus,
+    .btn-primary.focus {
+      color: white; /*#fff*/
+      background-color: black; /*286090*/
+      border-color: white; /*#122b40*/
+    }
+    /* Hover State */
+    .btn-primary:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#286090*/
+      border-color: black; /*#204d74*/
+    }
+    /* Press State*/
+    .btn-primary:active:hover,
+    .btn-primary.active:hover,
+    .open > .dropdown-toggle.btn-primary:hover,
+    .btn-primary:active:focus,
+    .btn-primary.active:focus,
+    .open > .dropdown-toggle.btn-primary:focus,
+    .btn-primary:active.focus,
+    .btn-primary.active.focus,
+    .open > .dropdown-toggle.btn-primary.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#204d74*/
+      border-color: white; /*#122b40*/
+    }
+
+/*Success Button*/
+    /* OFF State */
+    .btn-success {
+      color: black; /*#fff*/
+      background-color: white; /*#5cb85c*/
+      border-color: black; /*#4cae4c*/
+    }
+    /* ON State */
+    .btn-success:focus,
+    .btn-success.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#449d44*/
+      border-color: white; /*#255625*/
+    }
+    /* Hover State */
+    .btn-success:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#449d44*/
+      border-color: black; /*#449d44*/
+    }
+    /* Press State*/
+    .btn-success:active:hover,
+    .btn-success.active:hover,
+    .open > .dropdown-toggle.btn-success:hover,
+    .btn-success:active:focus,
+    .btn-success.active:focus,
+    .open > .dropdown-toggle.btn-success:focus,
+    .btn-success:active.focus,
+    .btn-success.active.focus,
+    .open > .dropdown-toggle.btn-success.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#398439*/
+      border-color: white; /*#255625*/
+    }
+
+/*Info Button*/
+    /* OFF State */
+    .btn-info {
+      color: black; /*#fff*/
+      background-color: white; /*#5bc0de*/
+      border-color: black; /*#46b8da*/
+    }
+    /* ON State */
+    .btn-info:focus,
+    .btn-info.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#31b0d5*/
+      border-color: white; /*#1b6d85*/
+    }
+    /* Hover State */
+    .btn-info:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#31b0d5;*/
+      border-color: black; /*#269abc*/
+    }
+    /* Press State*/
+    .btn-info:active:hover,
+    .btn-info.active:hover,
+    .open > .dropdown-toggle.btn-info:hover,
+    .btn-info:active:focus,
+    .btn-info.active:focus,
+    .open > .dropdown-toggle.btn-info:focus,
+    .btn-info:active.focus,
+    .btn-info.active.focus,
+    .open > .dropdown-toggle.btn-info.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#269abc*/
+      border-color: white; /*#1b6d85*/
+    }
+
+/*Warning Button*/
+    /* OFF State */
+    .btn-warning {
+      color: black; /*#fff*/
+      background-color: white; /*#f0ad4e*/
+      border-color: black; /*#eea236*/
+    }
+    /* ON State */
+    .btn-warning:focus,
+    .btn-warning.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#ec971f*/
+      border-color: white; /*#985f0d*/
+    }
+    /* Hover State*/
+    .btn-warning:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#ec971f*/
+      border-color: black; /*#d58512*/
+    }
+    /* Press State*/
+    .btn-warning:active:hover,
+    .btn-warning.active:hover,
+    .open > .dropdown-toggle.btn-warning:hover,
+    .btn-warning:active:focus,
+    .btn-warning.active:focus,
+    .open > .dropdown-toggle.btn-warning:focus,
+    .btn-warning:active.focus,
+    .btn-warning.active.focus,
+    .open > .dropdown-toggle.btn-warning.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#d58512*/
+      border-color: white; /*#985f0d*/
+    }
+
+/*Danger Button*/
+    /* OFF State */
+    .btn-danger {
+      color: black; /*#fff*/
+      background-color: white; /*#d9534f*/
+      border-color: black; /*#d43f3a*/
+    }
+    /* ON State */
+    .btn-danger:focus,
+    .btn-danger.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#c9302c*/
+      border-color: white; /*#761c19*/
+    }
+    .btn-danger:hover {
+      color: black; /*#fff*/
+      background-color: lightgrey; /*#c9302c*/
+      border-color: black; /*#ac2925*/
+    }
+    /* Press State*/
+    .btn-danger:active:hover,
+    .btn-danger.active:hover,
+    .open > .dropdown-toggle.btn-danger:hover,
+    .btn-danger:active:focus,
+    .btn-danger.active:focus,
+    .open > .dropdown-toggle.btn-danger:focus,
+    .btn-danger:active.focus,
+    .btn-danger.active.focus,
+    .open > .dropdown-toggle.btn-danger.focus {
+      color: white; /*#fff*/
+      background-color: black; /*#ac2925*/
+      border-color: white; /*#761c19*/
+    }
+    
+/* Thumbnail */
+.thumbnail img:hover{
+    transform: scale(1.1);
+}
+.thumbnail img{
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.thumbnail{
+    overflow: hidden;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: black; /*337ab7*/
+}
+
+/*Page Header*/
+.page-header {
+  padding-bottom: 0;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*Column*/
+.col-sm-4 {
+    margin-top: 25px;
+}
+
+/*Carousel*/
+.carousel {
+    padding: 50px;
+}
