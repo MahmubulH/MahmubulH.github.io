@@ -624,6 +624,44 @@ section.bl-expand .bl-icon-close {
 /* Top Left Section
 ================================================== */
 
+.bl-main>section.topleftoption {
+	top: 0;
+	left: 0;
+	background-image: url('../images/main-photo.jpg');
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.bl-main>section.topleftoption:before {
+	position:absolute;
+	bottom: -36px;
+    z-index: 1;
+	right:0;
+	content:url('../images/separator2.png');
+	max-width:960px;
+}
+
+.bl-main>section.topleftoption .bl-box h3 {
+	font-size: 28px;
+	margin: 25px 0 5px;
+	font-weight: 800;
+}
+
+.bl-main>section.topleftoption .bl-box h3 span {
+	color: #f2f2f2;
+	padding: 0;
+}
+
+.bl-main>section.topleftoption .bl-box .ah-headline.clip .ah-words-wrapper {
+	font-weight: 500;
+}
+
+.bl-main>section.topleftoption .bl-box .ah-headline.clip .ah-words-wrapper::after {
+	color: #e5544d;
+}
+
 .bl-main>section.topleft {
 	top: 0;
 	left: 0;
@@ -633,6 +671,7 @@ section.bl-expand .bl-icon-close {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+
 .bl-main>section.topleft:before {
 	position:absolute;
 	bottom: -36px;
@@ -660,7 +699,6 @@ section.bl-expand .bl-icon-close {
 .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper::after {
 	color: #e5544d;
 }
-
 
 /* Top Right Section - ABOUT
 ================================================== */
